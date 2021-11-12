@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'main', pathMatch: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   //{ path: 'main', component: DashboardComponent },
-  { path:'main', loadChildren: ()=> import('./components/dashboard/dashboard.module').then(x => x.DashboardModule) },
-  { path: '**', redirectTo: 'main', pathMatch: 'full' },
+  { path:'dashboard', loadChildren: ()=> import('./components/dashboard/dashboard.module').then(x => x.DashboardModule) },
+  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
 ];
 
 @NgModule({
