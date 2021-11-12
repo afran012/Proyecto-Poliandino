@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+}
+
+.hablemos-card{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 20%;
+}
+
+.hablemos {
+ // width: 90%;
+  //height: 90%;
+  align-self: center;
+  justify-self: end; 
+
+}
+
+.img-logo-color {
+  width: 100%;
+  height: 100%;
+}
+
+.img-hablemos{
+  width: 60%;
+
+}
+
+.example-card {
+    //max-width: 400px;
+    //width: 100%;
+    //height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4 25%;
+  }
+  
+  .example-header-image {
+    //background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  section.hablemos-card img {
+    grid-area: 1/1/4/1;
+
+  }
+
+  section.hablemos-card p {
+    grid-area: 3/1/4/1;   
+    align-self: center;
+    justify-self: end; 
+  }
+
+
+  mat-toolbar-row{
+    align-self: center;
+    justify-self: center; 
+    height: auto;
+    width: auto;
+  }
+  mat-toolbar-row {
+    height: auto;
+    width: auto;
+  }
+
+footer img{
+    width: 20%;
+    height: 20%;
+  }
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.footer-toolbar{
+  background-color: orange;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-btn {
+  width: 30%;  
+}

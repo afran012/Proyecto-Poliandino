@@ -21,6 +21,11 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatCardModule} from '@angular/material/card';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 
 
@@ -42,7 +47,11 @@ import {MatCardModule} from '@angular/material/card';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule
   ],
   exports: [
 
@@ -60,7 +69,11 @@ import {MatCardModule} from '@angular/material/card';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule
   ]
 })
 export class SharedModule { }

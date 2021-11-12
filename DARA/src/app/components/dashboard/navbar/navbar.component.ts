@@ -1,6 +1,9 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { Menu } from 'src/app/interfaces/menu';
 import { MenuService } from 'src/app/services/menu.service';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +13,7 @@ import { MenuService } from 'src/app/services/menu.service';
 export class NavbarComponent implements OnInit {
   menu: Menu[] = [];
 
-  constructor(private _menuService: MenuService) { }
+  constructor(private _menuService: MenuService , private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
     this.cargarMenu();
@@ -22,5 +25,11 @@ export class NavbarComponent implements OnInit {
       this.menu = data ;
     })
   }
+
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  .pipe(
+    map(result => result.matches),
+    shareReplay()
+  );
 
 }
