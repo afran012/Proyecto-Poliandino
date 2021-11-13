@@ -3,7 +3,18 @@
 }
 
 .navbar {
+  width: 100%;
   background-color: orange;
   color: white;
 }
 
+.btn-navbar {
+  //width: 50%;
+}
+
+@media (max-width: 615px) {
+  .btn-navbar{
+    display: none;
+  }
+  
+}

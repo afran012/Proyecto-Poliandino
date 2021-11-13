@@ -1,10 +1,12 @@
 <mat-toolbar class="navbar">
     <section class="logo">
-      <img src="../../../../assets/DARA/media/Logo-Blanco.png" alt="logo">
+      <img src="../../../../assets/DARA/media/Logo-a-Color.png" alt="logo">
     </section>
     <span class="example-spacer"></span>
-    <section>
+    <section class="btn-navbar">
        <button mat-button *ngFor="let item of menu" [routerLink]="item.redirect">{{ item.name }}</button>      
-    </section>    
+    </section>  
+    <app-menu-responsive></app-menu-responsive>
+
 </mat-toolbar>
 

@@ -25,6 +25,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -51,7 +53,8 @@ import {MatMenuModule} from '@angular/material/menu';
     LayoutModule,
     MatSidenavModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule
   ],
   exports: [
 
@@ -73,7 +76,8 @@ import {MatMenuModule} from '@angular/material/menu';
     LayoutModule,
     MatSidenavModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule
   ]
 })
 export class SharedModule { }

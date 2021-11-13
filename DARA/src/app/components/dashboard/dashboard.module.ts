@@ -9,6 +9,7 @@ import { ServicesLinesComponent } from './services-lines/services-lines.componen
 import { DaraProjectsComponent } from './dara-projects/dara-projects.component';
 import { CostumersComponent } from './costumers/costumers.component';
 import { MainComponent } from './main/main.component';
+import { MenuResponsiveComponent } from './navbar/menu-responsive/menu-responsive.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MainComponent } from './main/main.component';
     ServicesLinesComponent,
     DaraProjectsComponent,
     CostumersComponent,
-    MainComponent
+    MainComponent,
+    MenuResponsiveComponent
   ],
   imports: [
     CommonModule,
