@@ -4,7 +4,7 @@
 
 .navbar {
   width: 100%;
-  background-color: orange;
+  background-color: rgb(255, 68, 0);
   color: white;
 }
 
@@ -15,6 +15,10 @@
 @media (max-width: 615px) {
   .btn-navbar{
     display: none;
+  }
+  section.logo img{
+    //display: none;
+    width: 50%;
   }
   
 }

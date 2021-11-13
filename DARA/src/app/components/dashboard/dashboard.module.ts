@@ -10,6 +10,7 @@ import { DaraProjectsComponent } from './dara-projects/dara-projects.component';
 import { CostumersComponent } from './costumers/costumers.component';
 import { MainComponent } from './main/main.component';
 import { MenuResponsiveComponent } from './navbar/menu-responsive/menu-responsive.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MenuResponsiveComponent } from './navbar/menu-responsive/menu-responsiv
     DaraProjectsComponent,
     CostumersComponent,
     MainComponent,
-    MenuResponsiveComponent
+    MenuResponsiveComponent,
+    CarruselComponent
   ],
   imports: [
     CommonModule,
