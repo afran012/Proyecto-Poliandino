@@ -11,6 +11,7 @@ import { CostumersComponent } from './costumers/costumers.component';
 import { MainComponent } from './main/main.component';
 import { MenuResponsiveComponent } from './navbar/menu-responsive/menu-responsive.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { MainfooterComponent } from './mainfooter/mainfooter.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CarruselComponent } from './carrusel/carrusel.component';
     CostumersComponent,
     MainComponent,
     MenuResponsiveComponent,
-    CarruselComponent
+    CarruselComponent,
+    MainfooterComponent
   ],
   imports: [
     CommonModule,
