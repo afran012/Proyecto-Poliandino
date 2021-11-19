@@ -8,17 +8,27 @@ footer img{
   }
   
   .footer-toolbar{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
     background-color: #cc5e49;
-  color: white;
+    color: white;
   }
   
   .footer {
-  width: 100%;
-  
+  width: 100%;  
   }
   
   .footer-btn {
   width: 30%;  
+  }
+
+  .rights-footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
   }
   
   
